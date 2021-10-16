@@ -1,0 +1,9 @@
+/**
+* Transitions
+*
+* define transition(s) to keep it consisten across the site
+**/
+
+@mixin transition($type: all) {
+  transition: $type .25s ease-in-out;
+}

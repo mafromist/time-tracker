@@ -1,0 +1,40 @@
+/**
+ * Shame file
+ *
+ * This is a place for hacky, nasty code that should be replaced
+ * and moved to the correct partial. Ideally, this is empty.
+ */
+
+// svg{
+//   height: 100%;
+//   width: 100%;
+//   .animate{
+//     stroke-dasharray: 20;
+//     stroke-dashoffset: 20;
+//     animation: dash 1.5s linear infinite;
+//   }
+// }
+
+// @keyframes dash {
+//   to {
+//     stroke-dashoffset: 0;
+//   }
+// }
+
+// .star {
+//   fill: none;
+//   stroke: #7d2d68;
+//   stroke-width: 17px;
+
+// /* Stroke-dasharray property */
+//   stroke-dasharray: 1353px;
+//   stroke-dashoffset: 1353px;
+//   animation: move 3s linear infinite;   
+// /*     animation-fill-mode: forwards; */
+// }
+
+// @keyframes move {
+//   100% {
+//       stroke-dashoffset: 0;
+//   }
+// }

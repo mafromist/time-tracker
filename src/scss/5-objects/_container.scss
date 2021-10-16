@@ -1,0 +1,15 @@
+.container {
+  display: block;
+  padding-left: 16px; 
+  padding-right: 16px;
+  margin-bottom: 64px;
+
+  @include breakpoint(tabletLandscapeUp) {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    margin-bottom: 96px;
+  }
+}
