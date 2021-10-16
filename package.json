@@ -1,0 +1,31 @@
+{
+  "name": "time-tracker",
+  "version": "1.0.1",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm run cleanup && parcel ./index.html && cp -R ./public/newsletter.php ./dist/newsletter.php",
+    "cleanup": "rm -rf .parcel-cache dist",
+    "build": "rm -rf .parcel-cache dist && parcel build index.html --public-url ./ && cp -R ./public/newsletter.php ./dist/newsletter.php"
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ],
+  "dependencies": {
+    "@babel/preset-env": "^7.13.5",
+    "gsap": "^3.7.1",
+    "node-sass": "^6.0.1",
+    "node-sass-glob-importer": "^5.3.2",
+    "src": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "parcel": "latest",
+    "sass": "^1.32.8"
+  }
+}

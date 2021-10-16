@@ -1,0 +1,19 @@
+/** Document defaults (html, body) **/
+
+html {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: var(--color-white);
+}
+
+body {
+  background-color: $c-darkblue;
+  text-align: center;
+  color: $c-paleblue;
+  font-family: $f-body;
+  font-size: 18px;
+}

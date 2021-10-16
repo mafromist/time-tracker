@@ -1,0 +1,116 @@
+.row{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 30px;
+  grid-auto-flow: dense;
+}
+
+[class^="col-"]{
+  -ms-grid-column-end: span 1;
+  grid-column-end: span 1;
+}
+
+@include breakpoint(tabletLandscapeUp){
+  .row{
+    -ms-grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  // columns
+  .col-1{
+    -ms-grid-column-end: span 1;
+    grid-column-end: span 1;
+  }
+  .col-2{
+    -ms-grid-column-end: span 2;
+    grid-column-end: span 2;
+  }
+  .col-3{
+    -ms-grid-column-end: span 3;
+    grid-column-end: span 3;
+  }
+  .col-4{
+    -ms-grid-column-end: span 4;
+    grid-column-end: span 4;
+  }
+  .col-5{
+    -ms-grid-column-end: span 5;
+    grid-column-end: span 5;
+  }
+  .col-6{
+    -ms-grid-column-end: span 6;
+    grid-column-end: span 6;
+  }
+  .col-7{
+    -ms-grid-column-end: span 7;
+    grid-column-end: span 7;
+  }
+  .col-8{
+    -ms-grid-column-end: span 8;
+    grid-column-end: span 8;
+  }
+  .col-9{
+    -ms-grid-column-end: span 9;
+    grid-column-end: span 9;
+  }
+  .col-10{
+    -ms-grid-column-end: span 10;
+    grid-column-end: span 10;
+  }
+  .col-11{
+    -ms-grid-column-end: span 11;
+    grid-column-end: span 11;
+  }
+  .col-12{
+    -ms-grid-column-end: span 12;
+    grid-column-end: span 12;
+  }
+  
+  // offsets
+  .col-offset-1{
+    -ms-grid-column-start: 2;
+    grid-column-start: 2;
+  }
+  .col-offset-2{
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+  }
+  .col-offset-3{
+    -ms-grid-column-start: 4;
+    grid-column-start: 4;
+  }
+  .col-offset-4{
+    -ms-grid-column-start: 5;
+    grid-column-start: 5;
+  }
+  .col-offset-5{
+    -ms-grid-column-start: 6;
+    grid-column-start: 6;
+  }
+  .col-offset-6{
+    -ms-grid-column-start: 7;
+    grid-column-start: 7;
+  }
+  .col-offset-7{
+    -ms-grid-column-start: 8;
+    grid-column-start: 8;
+  }
+  .col-offset-8{
+    -ms-grid-column-start: 9;
+    grid-column-start: 9;
+  }
+  .col-offset-9{
+    -ms-grid-column-start: 10;
+    grid-column-start: 10;
+  }
+  .col-offset-10{
+    -ms-grid-column-start: 11;
+    grid-column-start: 11;
+  }
+  .col-offset-11{
+    -ms-grid-column-start: 12;
+    grid-column-start: 12;
+  }
+  
+}
