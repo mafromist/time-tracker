@@ -3,9 +3,9 @@
   "version": "1.0.1",
   "license": "MIT",
   "scripts": {
-    "dev": "npm run cleanup && parcel ./index.html && cp -R ./public/newsletter.php ./dist/newsletter.php",
+    "dev": "npm run cleanup && parcel ./index.html",
     "cleanup": "rm -rf .parcel-cache dist",
-    "build": "rm -rf .parcel-cache dist && parcel build index.html --public-url ./ && cp -R ./public/newsletter.php ./dist/newsletter.php"
+    "build": "rm -rf .parcel-cache dist && parcel build index.html --public-url ./"
   },
   "browserslist": [
     "last 3 and_chr versions",
