@@ -1,8 +1,8 @@
 .container {
   display: block;
-  padding-left: 16px; 
-  padding-right: 16px;
-  margin-bottom: 64px;
+  margin: 36px 24px;
+  border-radius: 25px;
+  background-color: $c-darkblue;
 
   @include breakpoint(tabletLandscapeUp) {
     padding-left: 50px;

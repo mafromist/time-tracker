@@ -1,0 +1,36 @@
+.tab {
+    &-profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        background-color: $c-primary;
+        border-radius: 25px;
+
+        &-details{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 10px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        place-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        height: 90px;
+    }
+}
+
+.profile-picture {
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid $c-white;
+}
