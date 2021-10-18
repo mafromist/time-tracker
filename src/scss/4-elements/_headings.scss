@@ -14,36 +14,24 @@ h6,
 .h5,
 .h6 {
   font-family: $f-body;
+  margin: 0;
 }
 
 
 h1,
 .h1 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
-  @include breakpoint(tabletPortraitUp){
-    font-size: 40px;
-    line-height: 40px;
-  }
 }
 
 h2,
 .h2 {
   font-size: 18px;
   font-weight: 500;
-  line-height: 28px;
-  @include breakpoint(tabletPortraitUp){
-    font-size: 32px;
-    line-height: 48px;
-  }
 }
 
 h3,
   .h3 {
     font-size: 24px;
     font-weight: 400;
-    @include breakpoint(tabletPortraitUp){
-      font-size: 32px;
-      line-height: 48px;
-    }
   }
