@@ -7,25 +7,26 @@ const hoursWeekly = document.querySelectorAll(".hours__weekly");
 const hoursMonthly = document.querySelectorAll(".hours__monthly");
 
 periodDaily.addEventListener("click", () => {
+    periodDaily.classList.add("active");
+    periodWeekly.classList.remove("active");
+    periodMonthly.classList.remove("active");
+
     for (let i = 0; i < hoursDaily.length; i++){
         hoursDaily[i].style.display = 'flex';   
         hoursWeekly[i].style.display = "none";
         hoursMonthly[i].style.display = "none";
     }
-    periodDaily.classList.add("active");
-    periodWeekly.classList.remove("active");
-    periodMonthly.classList.remove("active");
-
 });
 periodWeekly.addEventListener("click", () => {
+    periodDaily.classList.remove("active");
+    periodWeekly.classList.add("active");
+    periodMonthly.classList.remove("active");
+
     for (let i = 0; i < hoursDaily.length; i++){
         hoursDaily[i].style.display = 'none';
         hoursWeekly[i].style.display = "flex";
         hoursMonthly[i].style.display = "none";
     }
-    periodDaily.classList.remove("active");
-    periodWeekly.classList.add("active");
-    periodMonthly.classList.remove("active");
 });
 periodMonthly.addEventListener("click", () => {
     periodDaily.classList.remove("active");
