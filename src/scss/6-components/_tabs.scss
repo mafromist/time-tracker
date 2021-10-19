@@ -13,6 +13,12 @@
         }
     }
 
+    &__select{
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
     &__top {
         position:relative;
         height: 40px;
@@ -39,7 +45,7 @@
 
         }
         img{
-            height: 70px;
+            height: 55px;
             position: relative;
             z-index: -1;
             
@@ -121,16 +127,19 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin: 0;
     &__daily{
-        margin: 0;
+        display: none;
     }
     &__weekly{
-        margin: 0;
-        display: none;
+        display: flex;
     }
     &__monthly{
-        margin: 0;
         display: none;
     }
+}
+
+.active {
+    color: $c-white;
 }
 
