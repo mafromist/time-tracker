@@ -133,6 +133,20 @@
     justify-content: space-between;
     width: 100%;
     margin: 0;
+    @include breakpoint(tabletPortraitUp) {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        margin-top: 20px;
+        h1 {
+            font-size: 36px;
+            line-height: 20px;
+        }
+        p {
+            font-size: 12px;
+
+        }
+    }
     &__daily{
         display: none;
     }
