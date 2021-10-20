@@ -5,11 +5,6 @@
   background-color: $c-darkblue;
 
   @include breakpoint(tabletLandscapeUp) {
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    margin-bottom: 96px;
+
   }
 }
