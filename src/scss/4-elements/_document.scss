@@ -15,4 +15,9 @@ body {
   color: $c-paleblue;
   font-family: $f-body;
   font-size: 16px;
+  @include breakpoint(tabletLandscapeUp) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

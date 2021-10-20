@@ -1,0 +1,9 @@
+.home {
+    @include breakpoint(tabletLandscapeUp) {
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        width: 75vw;
+        margin: 120px auto;
+    }
+}
