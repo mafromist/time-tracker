@@ -1,11 +1,20 @@
 .tab {
-
+    @include breakpoint(tabletLandscapeUp){
+        width: 200px;
+    }
     &-profile {
         display: flex;
         flex-direction: column;
+        @include breakpoint(tabletLandscapeUp){
+            width: 210px;
+        }
         .tab {
             &__top {
-                
+                &-profile {
+                    @include breakpoint(tabletLandscapeUp){
+                        height: 350px;
+                    } 
+                }    
             }
             &__bottom {
                 
@@ -42,10 +51,22 @@
             height: 150px;
             background-color: $c-primary;
             border-radius: 25px;
+            @include breakpoint(tabletLandscapeUp){
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                padding-left: 10px;
+            }
             &-details{
                 display: flex;
                 flex-direction: column;
                 padding: 10px 10px;
+                h1 {
+                    @include breakpoint(tabletLandscapeUp){
+                        font-size: 32px;
+                        color: $c-white;
+                    }
+                }
             }
 
         }
@@ -53,7 +74,6 @@
             height: 55px;
             position: relative;
             z-index: -1;
-            
         }
         &-work {
             background-color: $c-work;
@@ -96,6 +116,7 @@
             justify-content: space-between;
             margin: 0;
             padding: 0 20px;
+            
         }
         &-profile {
             display: flex;
@@ -103,6 +124,18 @@
             justify-content: space-evenly;
             text-align: center;
             height: 90px;
+            @include breakpoint(tabletLandscapeUp){
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 20px;
+                margin: 15px 0;
+            }
+            h3 {
+                @include breakpoint(tabletLandscapeUp){
+                    font-size: 16px;
+                    padding: 3px 0 ;
+                }
+            }
         }
         // &-work {
         // }
@@ -125,6 +158,9 @@
     height: 100px;
     border-radius: 50%;
     border: 2px solid $c-white;
+    @include breakpoint(tabletLandscapeUp){
+        height: 75px;
+    }
 }
 
 .hours {
